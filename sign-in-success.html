@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetFlix Sign-in Success </title>
+     <link rel="icon" type="image/png" href="./images/netflix_logo_icon_170919.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        body{
+            --really-green:oklch(88.14% 0.203 158.82);
+            /* background:url(./vedios/login-vid.mp4); */
+            position: relative;
+        }
+        iframe{
+            height: 100vh;
+            width: 100%;
+        }
+        .container{
+            width: 100%;
+            /* height: 100vh; */
+            /* background-color: black; */
+            /* background-image:url(./images/login-bg3.jpg); */
+            /* background-repeat: no-repeat; */
+            /* background-size: 100% 100%; */
+            background: transparent;
+            z-index: 2;
+
+            color: bisque;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            position: absolute;
+            top: 20%;
+        }
+        .center-content{
+            height: 50vh;
+            width: 70%;
+            /* background-color: azure; */
+           text-align: center;
+           padding: 50px;
+           /* animation-name: breath;
+           animation-duration: 4s;
+           animation-timing-function: ease-in-out;
+           animation-iteration-count: infinite; */
+
+        }
+        .center-content  h1{
+            margin: 50px;
+            animation-name: breath;
+           animation-duration: 3s;
+           animation-timing-function: ease-in-out;
+           animation-iteration-count: infinite;
+        }
+        .center-content img{
+            color: green;
+            height: 80px;width: 80px;
+            border: 5px solid green;
+            border-radius: 50%;
+        }
+        .center-content i{
+            color: red;
+            
+        }
+        @keyframes breath {
+            from {
+                animation-timing-function: ease-out;
+            }
+            to {
+                transform: scale(1.25) translateY(-5px) perspective(1px);
+                text-shadow: 0 0 20px var(--really-green);
+                animation-timing-function: ease-in-out;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- <video width="100%" height="700px" controls>
+        <source src="./vedios/login-vid.mp4" type="vedio/mp4">
+    </video> -->
+    <iframe src="./vedios/login-vid.mp4" frameborder="0"></iframe>
+     <!-- <iframe src="./vedios/login-vedio.html" frameborder="0"></iframe> -->
+    <div class="container">
+        <!-- <iframe src="./vedios/login-vedio.html" frameborder="0"></iframe> -->
+         <!-- <iframe src="./vedios/login-vid.mp4" frameborder="0"></iframe> -->
+        <div class="center-content">
+            <img src="./images/tik.jpg" alt="" >
+            <br>
+        <h1 split-by="letter" letter-animation="breath">LOGIN SUCCESSFULLY!! </h1>
+
+        <h3> THANK YOU <i class="fa-solid fa-heart"></i> 4 SUPPORTING US!!</h3>
+        </div>
+    </div>
+</body>
+</html>
